@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    margin: 0;
+    font-family: "Monospace";
+}
+
+.menubar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+p {
+    margin: 0;
+    margin-left: 10px;
+    color: #40531a;
+    font-weight: 800;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mazeCanvas {
+    top: 30px;
+    position: relative;
+    background-color: #7FA347;
+    border: 5px solid #4E6227;
+    border-radius: 10px;
+}
+
+.msgbox {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 15px;
+    border: 5px solid #FFD700;
+    background-color: #1E90FF;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-family: "Monospace";
+}
+
+.msgbox h1 {
+    color: #FFD700;
+    margin-top: 20px;
+}
+
+.msgbox h2 {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.msgbox button {
+    background-color: #FFD700;
+    color: #000000;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Monospace";
+}
+
+.msgbox button:hover {
+    background-color: #FFC125;
+}
+
+
+.startbtn {
+    min-width: 120px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #80ed99;
+    box-shadow: 0 5px #57cc99;
+}
+.startbtn:hover {
+    box-shadow: 0 3px #57cc99;
+    top: 1px;
+}
+.startbtn:active {
+    box-shadow: 0 0 #57cc99;
+    top: 5px;
+}
+
+.showPathbtn {
+    min-width: 120px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #80ed99;
+    box-shadow: 0 5px #57cc99;
+}
+.showPathbtn:hover {
+    box-shadow: 0 3px #57cc99;
+    top: 1px;
+}
+.showPathbtn:active {
+    box-shadow: 0 0 #57cc99;
+    top: 5px;
+}
